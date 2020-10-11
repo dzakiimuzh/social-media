@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="192" height="68" viewBox="0 0 192 68">
+  <defs>
+    <filter id="DzakiMuzh" x="0" y="0" width="192" height="68" filterUnits="userSpaceOnUse">
+      <feOffset dx="4" dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_1" data-name="Group 1" transform="translate(-128 -27)">
+    <rect id="Rectangle_6" data-name="Rectangle 6" width="145" height="15" rx="2" transform="translate(144 59)" fill="#29a6ce"/>
+    <g transform="matrix(1, 0, 0, 1, 128, 27)" filter="url(#DzakiMuzh)">
+      <text id="DzakiMuzh-2" data-name="DzakiMuzh" transform="translate(14 39)" fill="#fff" font-size="26" font-family="Montserrat-SemiBold, Montserrat" font-weight="600" letter-spacing="0.03em"><tspan x="0" y="0">DzakiMuzh</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,257 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    overflow-x: hidden;
+
+}
+
+body {
+    background-color: #201F1F;
+
+}
+
+@font-face {
+    font-family: montserrat-semibold;
+    src: url(../font/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: montserrat-medium;
+    src: url(../font/Montserrat-Medium.ttf);
+}
+
+nav {
+    width: 84%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 90px;
+    transform: translateX(-500px);
+    animation: navbar 1s 1.4s forwards;
+}
+
+nav .navbar {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.container {
+    width: 82.5%;
+    margin: auto;
+
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.container h1 {
+    font-family: montserrat-semibold;
+    color: white;
+    margin-top: 55px;
+    font-size: 50px;
+    transform: translateY(-500px);
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, .15);
+    animation: judul 1s 1.8s forwards;
+
+}
+
+.container h1::before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: transparent;
+    border: 2px solid #31b8e6;
+    position: absolute;
+    top: -20px;
+    box-shadow: 0 0 15px rgba(41, 166, 206, .18);
+    left: -130px;
+    animation: mutar 5s infinite alternate;
+
+}
+
+.container h1::after {
+    content: '';
+    display: block;
+    width: 95%;
+    position: absolute;
+    border-radius: 5px;
+    height: 25px;
+    position: relative;
+    z-index: -2;
+    top: -22px;
+    background-color: #5A188C;
+    box-shadow: 3px 3px 10px rgba(90, 24, 140, .50);
+}
+
+.container .row .col-md-12 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+
+.container .row .col-md-12 a:nth-child(1) button {
+    background-color: #29A6CE;
+    box-shadow: 10px 10px 20px rgba(41, 166, 206, .20);
+    margin-top: 45px;
+    transition: .5s;
+    animation: button 1s 1s forwards;
+    transform: scale(0);
+}
+
+
+.container .row .col-md-12 a:nth-child(1) button:hover {
+    background-color: #31b8e6;
+    box-shadow: 0 12px 30px rgba(41, 166, 206, .30);
+
+}
+
+.container .row .col-md-12 a:nth-child(2) button {
+    background-color: #CE006B;
+    box-shadow: 10px 10px 20px rgba(206, 0, 107, .20);
+    margin: 30px 0;
+    transition: .5s;
+    animation: button 1s .6s forwards;
+    transform: scale(0);
+}
+
+.container .row .col-md-12 a:nth-child(2) button:hover {
+    background-color: #df0274;
+    box-shadow: 0 12px 30px rgba(206, 0, 107, .30);
+
+}
+
+.container .row .col-md-12 a:nth-child(3) button {
+    background-color: #5A188C;
+    box-shadow: 10px 10px 20px rgba(90, 24, 140, .25);
+    transition: .5s;
+    transform: scale(0);
+    animation: button 1s .2s forwards;
+}
+
+.container .row .col-md-12 a:nth-child(3) button::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: transparent;
+    border: 2px solid #df0274;
+    position: absolute;
+    bottom: -70px;
+    pointer-events: none;
+    box-shadow: 0 0 15px rgba(206, 0, 107, .18);
+    right: -130px;
+    animation: mutar 5s infinite alternate;
+
+}
+
+.container .row .col-md-12 a:nth-child(3) button:hover {
+    background-color: #5A188C;
+    box-shadow: 0 12px 30px rgba(90, 24, 140, .45);
+
+}
+
+.container .row .col-md-12 button {
+    width: 350px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: montserrat-medium;
+    font-size: 15px;
+    letter-spacing: .5px;
+    outline: none;
+    transition: .5s;
+
+}
+
+.container .row .col-md-12 button img {
+    margin: 0 10px;
+
+}
+
+.container .row .col-md-12 a {
+    text-decoration: none;
+
+}
+
+.container .row .col-md-12 button:hover {
+    transform: translateY(-7px);
+
+}
+
+@keyframes navbar {
+
+    from {
+
+        transform: translateX(-500px);
+
+    }
+
+    to {
+
+        transform: translateX(0);
+
+    }
+
+}
+
+@keyframes button {
+
+    from {
+
+        transform: scale(0);
+
+    }
+
+    to {
+
+        transform: scale(1);
+
+    }
+
+}
+
+@keyframes judul {
+
+    from {
+
+        transform: translateY(-500px);
+
+    }
+
+    to {
+
+        transform: translateY(0);
+
+    }
+
+}
+
+@keyframes mutar {
+
+    from {
+
+        transform: rotate(360deg);
+
+    }
+
+}

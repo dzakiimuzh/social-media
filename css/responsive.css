@@ -1,0 +1,90 @@
+@media (max-width: 320px) {
+
+    .container h1::after {
+        display: none;
+
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .container h1 {
+        font-size: 35px;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .container .row .col-md-12 a:nth-child(3) button::after {
+        display: none;
+
+    }
+
+    nav {
+        width: 95.3%;
+
+    }
+
+    .container h1::before {
+        display: none;
+
+    }
+
+    nav .navbar img {
+        width: 170px;
+
+    }
+
+    .container .row .col-md-12 a:nth-child(2) button {
+        margin: 20px 0;
+
+    }
+
+    .container .row .col-md-12 a:nth-child(1) button {
+        margin-top: 30px;
+
+    }
+
+    .container .row .col-md-12 button {
+        width: 100%;
+
+
+    }
+
+    .container .row .col-md-12 a {
+        width: 100%;
+
+    }
+
+    .container {
+        width: 90%;
+
+    }
+
+    .row {
+        align-items: flex-start;
+
+    }
+
+    .container h1::after {
+        width: 85%;
+        height: 20px;
+        top: -18px;
+    }
+
+    .container .row .col-md-12 a:nth-child(3) button::after {
+        right: 30px;
+        bottom: -80px;
+        z-index: -2;
+
+    }
+
+}
+
+@media (min-height: 700px) {
+
+    .container h1 {
+        margin-top: 50px;
+    }
+
+}
